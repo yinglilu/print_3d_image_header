@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 2.8)
+project(printh)
+add_executable(printh printh.c nifti1_io.c znzlib.c )
+target_link_libraries(printh m)
