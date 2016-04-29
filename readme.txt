@@ -13,6 +13,7 @@ Usage: printh filename
 support format: mha,mhd,nrrd,nii,hdr
 
 compile: windows or Linux:
-gcc -o printh printh.c nifti1_io.c znzlib.c -lm note: for windows, need MinGW installed.
+gcc -o printh printh.c nifti1_io.c znzlib.c -lm 
+note: for windows, need MinGW installed.
 
 or use cMakeLists.txt if you know cmake.
