@@ -45,11 +45,11 @@ int main(int argc, char*argv[])
 	}
 	else if (strcmp(ext,".mhd") == 0)
 	{
-		num_of_lines_to_read = 10;
+		num_of_lines_to_read = 20;
 	}
 	else if (strcmp(ext,"nrrd") == 0)
 	{
-		num_of_lines_to_read = 13;
+		num_of_lines_to_read = 20;
 	}
 	else if (strcmp(ext,".nii") == 0 || strcmp(ext,".hdr") == 0)
 	{
