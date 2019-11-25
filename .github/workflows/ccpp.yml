@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-      run: gcc -o printh printh.c nifti1_io.c znzlib.c -lm
+      run: gcc -o printh src/printh.c src/nifti1_io.c src/znzlib.c -lm
     - name: run it
       run: ./printh
