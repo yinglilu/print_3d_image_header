@@ -3,7 +3,7 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  build run and upload:
+  build_run_upload:
 
     runs-on: ubuntu-latest
     
