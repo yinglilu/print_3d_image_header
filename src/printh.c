@@ -34,14 +34,10 @@ int main(int argc, char*argv[])
 	/*get extension name*/
 	strncpy(ext,&filename[strlen(filename)-4],4);
 
-	/*number of lines to read
-		mha:11
-		mhd:10
-		nrrd:13
-	*/
+	/*number of lines to read*/
 	if (strcmp(ext,".mha") == 0)
 	{
-		num_of_lines_to_read = 14;
+		num_of_lines_to_read = 20;
 	}
 	else if (strcmp(ext,".mhd") == 0)
 	{
@@ -66,7 +62,7 @@ int main(int argc, char*argv[])
 	//read first n lines and print it
 	while( fgets(line, MAX_CHAR_EACH_LINE, fp) != NULL && n < num_of_lines_to_read) 
 	{
-		printf(line);
+		printf("%s",line);
 		n++;
 	}
 
