@@ -13,3 +13,8 @@ jobs:
       run: gcc -o printh src/printh.c src/nifti1_io.c src/znzlib.c -lm
     - name: run it
       run: ./printh
+    - uses: actions/upload-artifact@v1
+      with:
+        name: printh
+        path: printh
+      
