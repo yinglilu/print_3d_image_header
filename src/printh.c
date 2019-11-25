@@ -19,7 +19,7 @@ int main(int argc, char*argv[])
 	{
 		printf("Usage: printheader filename\n");
 		printf("       support format: mha,mhd,nii,nrrd,and hdr.\n");
-		return -1;
+		return 0;
 	}
 
 	/*open file*/
